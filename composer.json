@@ -1,0 +1,35 @@
+{
+    "name": "adb/homepage-planner",
+    "type": "wordpress-plugin",
+    "description": "This plugin makes it possible to schedule a page as a home page at a given time",
+    "keywords": [
+        "wordpress"
+    ],
+    "homepage": "https://www.arnedebelser.be",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "De Belser Arne",
+            "email": "debelserarne@hotmail.com",
+            "homepage": "https://www.arnedebelser.be",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "larapack/dd": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Adb\\HomepagePlanner\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adb\\HomepagePlanner\\Tests\\": "tests"
+        }
+    },
+    "scripts": {},
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
