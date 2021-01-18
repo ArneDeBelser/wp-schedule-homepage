@@ -3,7 +3,8 @@
     "type": "wordpress-plugin",
     "description": "This WordPress plugin makes it possible to schedule a page as a home page at a given time",
     "keywords": [
-        "wordpress"
+        "wordpress",
+        "plan"
     ],
     "homepage": "https://www.arnedebelser.be",
     "license": "MIT",
