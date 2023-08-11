@@ -1,7 +1,7 @@
 {
-    "name": "adb/homepage-planner",
+    "name": "arnedebelser/wp-schedule-homepage",
     "type": "wordpress-plugin",
-    "description": "This WordPress plugin makes it possible to schedule a page as a home page at a given time",
+    "description": "This innovative plugin empowers you with the ability to effortlessly schedule a page to become your website's homepage at any desired moment. Seamlessly enhance your website's user experience by controlling when specific content takes center stage. With our plugin, the process of dynamically curating your homepage content becomes a breeze, enabling you to captivate your audience precisely when it matters most. Elevate your website's engagement and impact by orchestrating your content with precision and finesse.",
     "keywords": [
         "wordpress",
         "plan"
@@ -11,7 +11,7 @@
     "authors": [
         {
             "name": "De Belser Arne",
-            "email": "debelserarne@hotmail.com",
+            "email": "debelserarne@gmail.com",
             "homepage": "https://www.arnedebelser.be",
             "role": "Developer"
         }
@@ -22,12 +22,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Adb\\HomepagePlanner\\": "src"
+            "ADB\\WPScheduleHomepage\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Adb\\HomepagePlanner\\Tests\\": "tests"
+            "ADB\\WPScheduleHomepage\\Tests\\": "tests"
         }
     },
     "scripts": {},

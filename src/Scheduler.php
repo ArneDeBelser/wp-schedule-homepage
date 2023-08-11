@@ -1,11 +1,11 @@
 <?php
 
-namespace Adb\HomepagePlanner;
+namespace ADB\WPScheduleHomepage;
 
 use DateInterval;
 use DateTime;
 
-class Swapper
+class Scheduler
 {
     /**
      * Swap the homepage the the newly set future homepage. This function only continues running if there is a new future homepage set
@@ -15,12 +15,12 @@ class Swapper
     public function run()
     {
         // Return the function early if there is no homepage to switch to
-        if ($this->isCurrentHomepageTheSameAsFutureHomepage()) {
+        if ($this->is_current_homepage_the_same_as_future_homepage()) {
             return;
         }
 
-        $pageId = get_option('adb_homepage_planner_page_id');
-        $time   = get_option('adb_homepage_planner_time');
+        $pageId = get_option('wp_schedule_homepage_page_id');
+        $time   = get_option('wp_schedule_homepage_time');
 
         $currenDateTime = new DateTime();
         $currenDateTime->add(new DateInterval("PT1H"));
@@ -35,8 +35,8 @@ class Swapper
      *
      * @return boolean
      */
-    private function isCurrentHomepageTheSameAsFutureHomepage()
+    private function is_current_homepage_the_same_as_future_homepage()
     {
-        return (get_option('page_on_front') == get_option('adb_homepage_planner_page_id'));
+        return (get_option('page_on_front') == get_option('wp_schedule_homepage_page_id'));
     }
 }
