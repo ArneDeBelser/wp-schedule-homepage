@@ -1,0 +1,1 @@
+{"version":1,"defects":{"PluginTest::test_plugin_initialization":3,"PluginTest::test_init_modules":3},"times":{"SampleTest::test_sample":0.001,"PluginTest::test_plugin_instance":0.141,"PluginTest::test_plugin_initialization":0.175,"PluginTest::test_init_modules":0}}

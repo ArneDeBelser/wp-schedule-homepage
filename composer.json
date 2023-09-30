@@ -16,9 +16,8 @@
             "role": "Developer"
         }
     ],
-    "require": {},
-    "require-dev": {
-        "larapack/dd": "^1.1"
+    "require": {
+        "phpunit/phpunit": "^9"
     },
     "autoload": {
         "psr-4": {
@@ -30,7 +29,13 @@
             "ADB\\WPScheduleHomepage\\Tests\\": "tests"
         }
     },
-    "scripts": {},
+    "scripts": {
+        "test": "phpunit",
+        "phpunit": "phpunit"
+    },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "require-dev": {
+        "yoast/phpunit-polyfills": "^2.0"
+    }
 }
