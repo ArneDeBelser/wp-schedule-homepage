@@ -17,4 +17,12 @@ use ADB\WPScheduleHomepage\Plugin;
 
 require __DIR__ . '/vendor/autoload.php';
 
+if (!function_exists('dd')) {
+    function dd($var)
+    {
+        var_dump($var);
+        die();
+    }
+}
+
 new Plugin();

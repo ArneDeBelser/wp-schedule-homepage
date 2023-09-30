@@ -27,7 +27,7 @@ class Settings
         add_settings_section(
             'wp_schedule_homepage',
             __('WP Schedule Homepage', 'wp-schedule-homepage'),
-            [$this, 'set_up_adb_homepage_planner_settings_section'],
+            [$this, 'set_up_wp_schedule_home_settings_section'],
             'reading'
         );
     }
@@ -38,7 +38,7 @@ class Settings
      * @param mixed $arg
      * @return void
      */
-    public function set_up_adb_homepage_planner_settings_section($arg)
+    public function set_up_wp_schedule_home_settings_section($arg)
     {
         echo '<p>' . __('Specify the page to which the current homepage will be transitioned at your designated time.', 'wp-schedule-homepage') . '</p>';
     }

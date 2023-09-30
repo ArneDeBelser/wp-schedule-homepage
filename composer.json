@@ -36,6 +36,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "yoast/phpunit-polyfills": "^2.0"
+        "yoast/phpunit-polyfills": "^2.0",
+        "10up/wp_mock": "^1.0"
     }
 }

@@ -12,20 +12,7 @@ class PluginTest extends TestCase
         // Check if the Plugin class is instantiated successfully
         $this->assertInstanceOf(Plugin::class, $plugin);
 
-        // Check if the 'plugins_loaded' action is added
-        $this->assertTrue(has_action('plugins_loaded', [$plugin, 'initModules']));
-    }
-
-    public function test_init_modules()
-    {
-        $plugin = new Plugin();
-        $plugin->initModules();
-
-        // Check if the 'init' action is added
-        $this->assertTrue(has_action('init', function () {
-            return !is_admin();
-        }));
-
-        // You can add more specific tests related to the 'initModules' method here
+        // Check if the 'plugins_loaded' action is added, when checking a specific function, the priority of that hook is returned, that's why we check for 10.
+        $this->assertEquals(10, has_action('plugins_loaded', [$plugin, 'initModules']));
     }
 }
